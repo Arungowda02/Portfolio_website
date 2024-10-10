@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arun Gowda Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" id="profile-name">
+          <img
+            src="Aibi_1661662525110 (1).png"
+            alt="Profile"
+            class="profile-pic"
+          />
+          <span class="navbar-text"><b>Arun Gowda</b></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" style="color: white">
+                <i class="fa-solid fa-house-chimney"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills" style="color: white">
+                <i class="fa-solid fa-list-ul"></i> My Skills
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates" style="color: white">
+                <i class="fa-regular fa-file"></i> Certificates
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer" style="color: white">
+                <i class="fa-regular fa-address-book"></i> Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- popup information -->
+    <div id="profile-popup" class="popup">
+      <div class="popup-content">
+        <img
+          style="
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 10px;
+          "
+          src="Aibi_1661662525110 (1).png"
+          alt="Profile"
+          class="profile-pic"
+        />
+        <h3><b>Arun Gowda</b></h3>
+        <p>(Graduate)</p>
+        <p>
+          <b>Objective :</b>To utilize my technical skills for achieving the
+          target and developing the best performance in the organization. So
+          looking for a role as a <b>Java Developer</b>.
+        </p>
+        <p>
+          <a
+            style="text-decoration: none"
+            href="mailto:arungowdaarungowda36@gmail.com"
+            aria-label="Email"
+          >
+            <i class="fas fa-envelope footer-icon"></i>
+            mailto:arungowdaarungowda36@gmail.com</a
+          >
+        </p>
+        <button id="close-popup">Close</button>
+      </div>
+    </div>
+
+    <!-- Introduction Section with Continuous Text Animation -->
+    <section id="home" class="intro-section">
+      <div>
+        <h1 class="intro-text"><b>Hello, I'm Arun Gowda</b></h1>
+        <h1 class="intro-text" id="developer-text"></h1>
+        <br />
+        <p style="color: aliceblue">( fresher )</p>
+      </div>
+    </section>
+
+    <!-- skill section -->
+    <section id="skills" class="skills-section">
+      <h2 style="font-size: 2.5em; color: rgb(31, 36, 39)" class="mt-5">
+        <b>My Skills</b>
+      </h2>
+      <div
+        class="skills-container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+        "
+      >
+        <div class="skill-item" style="text-align: center">
+          <i
+            class="fab fa-java skill-icon"
+            alt="Java Icon"
+            data-skill="Java"
+            style="font-size: 3em"
+          ></i>
+          <p style="margin-top: 10px">Java</p>
+        </div>
+        <div class="skill-item" style="text-align: center">
+          <i
+            class="fab fa-python skill-icon"
+            alt="Python Icon"
+            data-skill="Python"
+            style="font-size: 3em"
+          ></i>
+          <p style="margin-top: 10px">Python</p>
+        </div>
+        <div class="skill-item" style="text-align: center">
+          <i
+            class="fab fa-js-square skill-icon"
+            alt="JavaScript Icon"
+            data-skill="JavaScript"
+            style="font-size: 3em"
+          ></i>
+          <p style="margin-top: 10px">JavaScript</p>
+        </div>
+        <div class="skill-item" style="text-align: center">
+          <i
+            class="fab fa-html5 skill-icon"
+            alt="HTML Icon"
+            data-skill="HTML"
+            style="font-size: 3em"
+          ></i>
+          <p style="margin-top: 10px">HTML</p>
+        </div>
+        <div class="skill-item" style="text-align: center">
+          <i
+            class="fab fa-css3-alt skill-icon"
+            alt="CSS Icon"
+            data-skill="CSS"
+            style="font-size: 3em"
+          ></i>
+          <p style="margin-top: 10px">CSS</p>
+        </div>
+        <div class="skill-item" style="text-align: center">
+          <i
+            class="fas fa-cloud skill-icon"
+            alt="AWS Cloud Icon"
+            data-skill="AWS"
+            style="font-size: 3em"
+          ></i>
+          <p style="margin-top: 10px">AWS Cloud</p>
+        </div>
+        <div class="skill-item" style="text-align: center">
+          <i
+            class="fas fa-database skill-icon"
+            alt="MySQL Icon"
+            data-skill="MySQL"
+            style="font-size: 3em"
+          ></i>
+          <p style="margin-top: 10px">MySQL</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Popup -->
+    <div id="skill-info" class="skill-popup">
+      <div class="skill-content">
+        <h3 id="skill-name"></h3>
+        <p id="skill-proficiency"></p>
+        <p id="skill-description"></p>
+        <button id="close-skill" class="close-button">Close</button>
+      </div>
+    </div>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+      <h2 style="font-size: 2.5em; color: rgb(31, 36, 39)" class="mt-5">
+        <b>Certificates</b>
+      </h2>
+      <div class="certificates-container mt-5">
+        <div class="certificate-item">
+          <img
+            src="Arun Gowda Course Certificate_page-0001.jpg"
+            alt="Certificate 1"
+            class="certificate"
+          />
+          <div class="certificate-details">Course Completion - Java</div>
+        </div>
+        <div class="certificate-item">
+          <img
+            src="Arun Gowda_AWS Course Completion Certificate (1)_page-0001.jpg"
+            alt="Certificate 2"
+            class="certificate"
+          />
+          <div class="certificate-details">Course Completion - AWS</div>
+        </div>
+        <div class="certificate-item">
+          <img
+            src="'Certificate of Attendance (AD183-7.0).pdf'_page-0001.jpg"
+            alt="Certificate 3"
+            class="certificate"
+          />
+          <div class="certificate-details">Certificate of Attendance</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Resume Section -->
+    <div class="download-resume">
+      <p class="resume-message">
+        Interested in my work? Download my resume below!
+      </p>
+      <br />
+      <a
+        href="Arun Gowda_BE_ECE_2023_Java Full Stack.pdf"
+        download
+        class="resume-button"
+        >Download Resume</a
+      >
+    </div>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <div class="footer-container">
+        <a
+          href="mailto:arungowdaarungowda36@gmail.com"
+          class="footer-link"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope footer-icon"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/arun-gowda-7a66a5227/"
+          class="footer-link"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin footer-icon"></i>
+        </a>
+        <a
+          href="https://github.com/Arungowda02/"
+          class="footer-link"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github footer-icon"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/mr_djchampion/"
+          class="footer-link"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram footer-icon"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
